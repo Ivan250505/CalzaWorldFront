@@ -6,10 +6,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const formRegistro = document.getElementById("registroForm");
 
   if (!formRegistro) {
-    console.error("No se encontró el formulario con id 'registroForm'");
-    return;
+    console.error("❌ No se encontró el formulario con id 'registroForm'");
+  } else {
+    console.log("✅ Formulario encontrado correctamente");
   }
-
   formRegistro.addEventListener("submit", async function (e) {
     e.preventDefault();
 
